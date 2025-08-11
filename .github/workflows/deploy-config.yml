@@ -23,7 +23,6 @@ jobs:
       - name: Sync repo to S3 bucket
         run: |
           aws s3 sync ./ s3://studiomk-app-assets/ \
-            --acl public-read \
             --delete \
             --exclude ".git/*" \
             --cache-control no-cache
