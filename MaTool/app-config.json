@@ -1,0 +1,17 @@
+{
+    "maintenance": {
+        "isActive": false,
+        "message": "現在メンテナンス中です。しばらくお待ちください。",
+        "until": "2025-08-12T15:00:00Z"
+    },
+    "update": {
+        "ios": {
+            "requiredVersion": "2.0.10",
+            "storeUrl": "https://apps.apple.com/dz/app/matool/id6504391638?l=ja"
+        },
+        "android": {
+            "requiredVersion": "2.0.5",
+            "storeUrl": "https://play.google.com/store/apps/details?id=com.studiomk.matool"
+        }
+    }
+}
