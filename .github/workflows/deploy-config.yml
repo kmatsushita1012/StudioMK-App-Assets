@@ -20,9 +20,10 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-northeast-1
 
-      - name: Sync repo to S3 bucket
+      - name: Upload only app-config.json preserving path
         run: |
-          aws s3 sync ./ s3://studiomk-app-assets/ \
-            --delete \
-            --exclude ".git/*" \
+          aws s3 cp ./ s3://studiomk-app-assets/ \
+            --recursive \
+            --exclude "*" \
+            --include "*/app-config.json" \
             --cache-control no-cache
