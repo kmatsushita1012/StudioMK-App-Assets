@@ -1,8 +1,5 @@
 {
-    "maintenance": {
-        "message": "メンテナンス中です。しばらくお待ちください。",
-        "until": "2025-08-20T23:59:59Z"
-    },
+    "maintenance": null,
     "update": {
         "ios": {
             "requiredVersion": "2.1.0",
