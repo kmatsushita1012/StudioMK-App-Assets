@@ -2,7 +2,7 @@
     "maintenance": {
         "isActive": false,
         "message": "",
-        "until": ""
+        "until": null
     },
     "update": {
         "ios": {
