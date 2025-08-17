@@ -19,6 +19,13 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-northeast-1
+      
+      - name: Validate app-config.json format
+        run: |
+          npm install -g ajv-cli
+          for file in $(find . -path "*/app-config.json"); do
+            ajv validate -s ./Template/app-config.schema.json -d "$file"
+          done
 
       - name: Upload only app-config.json preserving path
         run: |
