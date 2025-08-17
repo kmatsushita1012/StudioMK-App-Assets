@@ -2,11 +2,11 @@
     "maintenance": null,
     "update": {
         "ios": {
-            "requiredVersion": "2.0.10",
+            "requiredVersion": "2.1.0",
             "storeUrl": "https://apps.apple.com/dz/app/matool/id6504391638?l=ja"
         },
         "android": {
-            "requiredVersion": "2.0.5",
+            "requiredVersion": "2.1.0",
             "storeUrl": "https://play.google.com/store/apps/details?id=com.studiomk.matool"
         }
     }
