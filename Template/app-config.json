@@ -1,6 +1,5 @@
 {
     "maintenance": {
-        "isActive": true,
         "message": "メンテナンス中です。しばらくお待ちください。",
         "until": "2025-08-20T23:59:59Z"
     },
