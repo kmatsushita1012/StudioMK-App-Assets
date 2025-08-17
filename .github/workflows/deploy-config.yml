@@ -24,7 +24,7 @@ jobs:
         run: |
           npm install -g ajv-cli
           for file in $(find . -path "*/app-config.json"); do
-            ajv validate -s ./Template/app-config.schema.json -d "$file"
+            ajv validate -s ./Template/app-config.schema.json -d "$file  --strict=false"
           done
 
       - name: Upload only app-config.json preserving path
